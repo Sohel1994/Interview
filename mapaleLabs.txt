@@ -1,0 +1,53 @@
+1)Memory Layout of C Programs :
+1)text section - also kown as code section contains executable instructions of programm this is read only memory.
+2) data section - initialize and uninitilized, initilized contains globle and static varible initilize by programmer.
+                                               uninitilized contains globle and static varible which are initilized by karnel to arithmatic=0.
+3)stack : stack area contain programm stack , in LIFO structure. the stack consist automatic variable and information about each time function called
+          and address where to return to.
+4) heap :  Heap is the segment where dynamic memory allocation usually takes place.
+
+
+2)How we can find that how many objects are created for the class?
+-> crete  variable static int count and static member function to show return count value.
+   Increment the count in constructor because constructor gets called when object gets created.
+eg. class Message {
+private:
+    //static data member to count the objects
+    static int count;
+  public:
+    //constructor
+    Message()
+    {
+        count++;
+    }
+    //static member function
+    static int totalObjects(void)
+    {
+        return count;
+    }
+}
+
+3)differece between process and threads ?
+1.	Process means any program is in execution.                          1. Thread means a segment of a process.
+2.	The process takes more time to terminate.	                          2. The thread takes less time to terminate.
+3.	It takes more time for creation.	                                  3. It takes less time for creation.
+4.	It also takes more time for context switching.	                    4. It takes less time for context switching.
+5.	The process is less efficient in terms of communication.	          5. Thread is more efficient in terms of communication.
+6. 	Multiprogramming holds the concepts of multi-process.	              6. We don’t need multi programs in action for multiple threads because a single process consists of multiple threads.
+7.	The process is isolated. not Shared memory with other process      7. Threads share memory.
+8.	The process is called the heavyweight process.	                    8. A Thread is lightweight as each thread in a process shares code, data, and resources.
+9.	Process switching uses an interface in an operating system.	        9. Thread switching does not require calling an operating system and causes an interrupt to the kernel.
+10.	If one process is blocked then 
+    it will not affect the execution of other processes 	              10. If a user-level thread is blocked, then all other user-level threads are blocked. 
+11.	The process has its own Process Control Block, Stack,               11. Thread has Parents’ PCB, its own Thread Control Block, and Stack and common Address space.
+    and Address Space.	                                                
+12.	Changes to the parent process do not affect child processes.	      12. Since all threads of the same process share address space and other resources so any changes to the main thread may affect the behavior of the other threads of the process.
+13.	A system call is involved in it.	                                  13. No system call is involved, it is created using APIs.
+14.	The process does not share data with each other.	                  14. Threads share data with each other.
+15. State - new,ready,running,waiting,terminated and suspended.         15. state - ready, running and blocked.
+
+
+4)Why do we need inheritance?
+Inheritance allows programmers to create classes that are built upon existing classes, 
+to specify a new implementation while maintaining the same behaviors (realizing an interface),
+to reuse code and to independently extend original software via public classes and interfaces.
