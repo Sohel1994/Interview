@@ -51,3 +51,77 @@ private:
 Inheritance allows programmers to create classes that are built upon existing classes, 
 to specify a new implementation while maintaining the same behaviors (realizing an interface),
 to reuse code and to independently extend original software via public classes and interfaces.
+
+=============================================================================================================================
+
+synOption 
+
+1) can we throw exception from constructor ?
+   yes but destructor gets never called after exeption so it could result memory leak
+
+class ExampleClass {
+public:
+    ExampleClass(int val) {
+        if (val == 0) {
+            throw " run time error";
+        }
+        m_val = val;
+    }
+private:
+    int m_val;
+}
+};
+
+int main()
+{
+    int main() {
+    try {
+        ExampleClass obj1(10);   // objcect will create 
+        ExampleClass obj2(0);    // 
+    }
+    catch (std::exception& e) {
+        std::cerr << e.what() << '\n';
+    }
+    return 0;
+}
+
+}
+
+
+2) assignement operator overloading 
+class A {
+  public:
+  void operator=(const Complex& C)
+    {
+        real = C.real;
+        img = C.img;
+    }
+}
+int main()
+{
+   A a;
+   A b ;
+   b=a;   
+}
+
+3)can we call static method with object in c++?
+Yes you can call static methods via object also but do remember that 
+data is still associated with class not object.
+
+4) type casting ->
+   static cast -> can be done at compile time int to float ot pointer to void pointer.
+   I) float f = 3.5;
+    int b = static_cast<int>(f); // 
+
+   II)int i = 10;
+  void* v = static_cast<void*>(&i);
+  int* ip = static_cast<int*>(v);
+
+  dynamic cast ->
+  dynamic casting is mainly used for safe downcasting at run time. base must have virtula function
+  derived d1;
+  Base* bp = dynamic_cast<Base*>(&d1); // down casting 
+  // Dynamic_casting
+  Derived1* dp2 = dynamic_cast<Derived1*>(bp);
+
+
