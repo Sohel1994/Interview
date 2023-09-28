@@ -89,18 +89,21 @@ int main()
 
 
 2) assignement operator overloading 
-class A {
+class complex {
+    int real;
+    int img;
   public:
-  void operator=(const Complex& C)
+    complex* operator=(const complex& C)
     {
-        real = C.real;
-        img = C.img;
+        this->real = C.real;
+        this->img = C.img;
+        return this;
     }
-}
+};
 int main()
 {
-   A a;
-   A b ;
+   complex a;
+   complex b ;
    b=a;   
 }
 
