@@ -127,4 +127,36 @@ data is still associated with class not object.
   // Dynamic_casting
   Derived1* dp2 = dynamic_cast<Derived1*>(bp);
 
+ access spacifiers :
+ private : can not access privet, protected and public becomes privet.
+ Protected : can not access privet , public and protected becomes protected.
+ public : can not access privet , public and proteed as it is.
 
+
+dimond problem or virtual class 
+#include <iostream> 
+using namespace std; 
+class A { 
+public: 
+	void show() 
+	{ 
+		cout << "Hello from A \n"; 
+	} 
+}; 
+class B : public virtual A { 
+}; 
+
+class C : public virtual A { 
+}; 
+
+class D : public B, public C { 
+}; 
+
+int main() 
+{ 
+	D object; 
+	object.show(); 
+} 
+
+size of empty class/structure is 1 
+if int is size is 4 then multiple of 4;
