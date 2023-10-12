@@ -69,7 +69,7 @@ interview question on os and linux platform.
   It locates the karnel and load it on main memory after that start its execuation.
 
 10)What is demand paging?
-=> it is the process in which pages are loade on memory on demand.
+=> it is the process in which pages are loaded on memory on demand.
    This method is completely virtual memory
    the pages are loaded on memory when programme execution refered to memory location of page.
    attamp to access the page which is required.
@@ -80,7 +80,66 @@ interview question on os and linux platform.
   in which data processing should be done in fixed and small interval.
   It occupise less memory and less resources.
  
+12)What is procesess synchronization?
+=> Processes synchronization is way to cordination of procesess to aquire resources or working on same data without any interface.
+   processes synchronization essential to maintain data cosistancey during execution of programme.
+   
+13)What is IPC ?
+=> Interprocess communication mechanism in which procesess/threads communicte  with each other internaly while aquiring resources like shared memory.
+   It is simply used data exchanged between in multiple threads of 1 or more programmes/procesess.
+  
+   Different IPC mechanism
+   1)pipes
+   2)semaphore
+   3)messege queuing
+   4)socket
+   5)shared memory
+   6)signal
+   
+14)what is differnt between main memory and secondary memory?
 
+                        main                                                                               secondary
+1)primary memory, read or wirte memory, random access memory                     1)secondary memory, auxilary memory , external memory.  
+
+2)programme and data required by cpu during execution by programme               2)hard drive, cd or USB flash drives.
+  can be stored on it.
+  
+3)data can be directly access by processing unit.                                3)1st data or programmes transfered to main memory then access by processing units.
+
+4)it is temporary so data loss in case of power failuer                          4)it is permant memory so data loss not affect in case power failuer.
+
+5)very costly, much faster.                                                      5)cheap as compared to primary , slower than primary.
+
+6)can be access by data                                                          6)can be access by I/O channles. 
+ 
+ 
+ 
+15)what is the overlays in OS?
+=>It is mechanism in which process divide in small pieces so that only essential data and required instruction stored on memory.
+  Does not need any os support.
+  It can run programmes that are bigger than phisical memory by keepking essiential data and instruction that can be needed during programme execution. 
+ 
+ 16) top 10 OS 
+     windows
+	 ubuntu
+	 centos
+	 android
+	 mac OS
+     Chrom OS
+     fedora
+     debien
+     free BSD
+     solaris	 
+	 
+ 
+ 
+ 
+ Intermidiate question?
+ 
+ 
+ 
+   
+   
 
 
 
