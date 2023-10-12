@@ -1,0 +1,100 @@
+
+
+interview question on os and linux platform.
+
+1)What do you mean by operating system and its basic function ?
+=> OS is software programme that manages and handles computer resourcess such as hardware and software.
+   basic functions -> 
+   - memory management and process management.
+   - provide user interface to user.
+   - file management and device management.
+   - scheduling the resources and jobs.
+   - error detection.
+   - Security.
+   
+2)Why os is important?
+=> os is important part of computor system it provides interction to user to computer programme installed on it.
+   It also helps to comunicate with hardaware and also mantained balance between hardware and cpu.
+   It also provides service and platform to user to run programme on it.
+   
+3) What is the main purpose of os?
+   the main purpose of os is memory mangement , process management , user programme interaction with application istalled on it.
+   and operation of all hardaware and software.
+   
+   Types of OS. 
+   batch os -> payroll os and trasaction process.
+   multiprogramme os -> windows os ans unix os 
+   timesharing os -> multics
+   Distrubuted os -> LOCUS.
+   realtime os -> PSOS and VRTX 
+   
+   
+4) What are the benifites of mutiprocessor system?
+=> It known as computer system that contained 2 or more cpu's 
+   The system processing multiple computer programme at same time with 2 or more cpus by sharing same memory.
+   benifites of the multiprocess system is it can handle multiple comuputer programme at single unit time with sharing resources.
+   
+5)What is RAID and its different leveles?
+  REDUNDANT ARRAYS OF INDEPENDENT DISK this method is used store data on multiple disk thats way it is consider
+  as data storage virtulization disk technology combines multiple disk.
+  It simply balances data protection, system performance and storage space.
+  It increase system performance by increasing storage capcity.
+  Main purpose is to acheive data redundancy to reduce data loss.  
+
+  There 6 levels of RAID 
+  RAID 0 - non redundant level : data store on multiple disk but disk failuer can affect the system perporformance.
+  RAID 1 - Mirroring and duplexing : duplication on of data on multiple disk so recovery of data is easy.
+  RAID 2 - bit level error correcting code : error of data is checke at every bit level uses hamming code parity checked 
+           uses 2 disk 1 for store bits of each word and another is used to save parity bit.
+  RAID 3 - byte interleved parity  : we store the parity bits in disk section and the information in dedicated parity section.
+  RAID 4 - block interleved parity : instead of duplication of data it uses parity bit apporch to reconstruct the lost data.
+  RAID 5 - block interleved distributed parity : same as block but only difference is parity rotate among the drives.
+           more than 2 disk failuer can not recover the data.
+  RAID 6 - P+Q redundancy : it uses more than one disk failuer in this case paire of independent parities are generated and store on disk.
+
+6)What is GUI?
+=> grafical user interface created for interact with os insted using of command line.
+   very user friendly instead of memorising the command.
+   
+7)What is the pipe when it use?
+=> the pipe is nothing but interconnection of 2 or more process which are interelated to each other.
+   one process can send information such as output  to another programme process using pipes.
+   
+8)What are the different kind of signal that are possible on semafore?
+=> wait() and signal().
+
+9)What is bootstrap programme in OS?
+=>It is the programme that initilize the OS during the startup. means first code executed when computer system started.
+  os known as booting. it store on fix location on memory 
+  It locates the karnel and load it on main memory after that start its execuation.
+
+10)What is demand paging?
+=> it is the process in which pages are loade on memory on demand.
+   This method is completely virtual memory
+   the pages are loaded on memory when programme execution refered to memory location of page.
+   attamp to access the page which is required.
+   if it is not available/fault then page fault trap occurs. 
+   
+11)What is RTOS ?
+=>Real time operating system which designed for real time application. 
+  in which data processing should be done in fixed and small interval.
+  It occupise less memory and less resources.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
