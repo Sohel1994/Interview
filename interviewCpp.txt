@@ -160,3 +160,12 @@ int main()
 
 size of empty class/structure is 1 
 if int is size is 4 then multiple of 4;
+
+
+How to compile and run C program in notepad++ ?
+To compile and run c program in notepad++ follow the steps mentioned below:
+Step-1: Download and install notepad++
+Step-2: Download and install MinGw gcc along with gcc.
+Step-3: Configure notepad++ for gcc. This step can be further divided into two sub-steps. A: Create C compiler tool in Notepad++
+B: Creating C execution tool.
+Step-4: Execute C program in Notepad++
